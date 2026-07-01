@@ -1,0 +1,123 @@
+/* =======================================
+GALERIA
+======================================= */
+
+#galeria{
+
+    padding:120px 0;
+
+}
+
+.galeria-slider{
+
+    display:grid;
+
+    grid-template-columns:auto 1fr auto;
+
+    align-items:center;
+
+    gap:2rem;
+
+    margin-top:4rem;
+
+}
+
+.galeria-viewport{
+
+    overflow:hidden;
+
+    width:100%;
+
+}
+
+.galeria-track{
+
+    display:flex;
+
+    gap:2rem;
+
+    transition:transform .5s ease;
+
+}
+
+.galeria-item{
+
+    flex:0 0 calc((100% - 4rem) / 3);
+
+}
+
+.galeria-item img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    display:block;
+
+}
+
+.slider-btn{
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:1.1rem;
+
+    background:#d52b1e;
+
+    color:#fff;
+
+    transition:.3s;
+
+    z-index:5;
+
+}
+
+.slider-btn:hover{
+
+    transform:scale(1.08);
+
+}
+
+@media(max-width:992px){
+
+    .galeria-item{
+
+        flex:0 0 calc((100% - 2rem)/2);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .galeria-slider{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .slider-btn{
+
+        display:none;
+
+    }
+
+    .galeria-item{
+
+        flex:0 0 100%;
+
+    }
+
+}

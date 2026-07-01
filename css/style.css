@@ -1,0 +1,21 @@
+@import url("base/base.css");
+
+@import url("header/header.css");
+
+@import url("hero/hero.css");
+
+@import url("diferenciais/diferenciais.css");
+
+@import url("categorias/categorias.css");
+
+@import url("comprar/comprar.css");
+
+@import url("galeria/galeria.css");
+
+@import url("avaliacoes/avaliacoes.css");
+
+@import url("contato/contato.css");
+
+@import url("footer/footer.css");
+
+@import url("responsive/responsive.css");

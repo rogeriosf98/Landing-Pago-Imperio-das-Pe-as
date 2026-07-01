@@ -1,0 +1,199 @@
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    background: var(--cor-primaria);
+
+    padding: 2.5rem 0 1.2rem;
+
+    color: var(--cor-branca);
+
+}
+
+/* ==========================================================
+   LOGOS
+========================================================== */
+
+.footer-marcas{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 4rem;
+
+    margin-bottom: 1rem;
+
+    flex-wrap: wrap;
+
+}
+
+/* Mesma altura para as duas logos */
+
+.footer-marcas img{
+
+    height: 75px;
+
+    width: auto;
+
+    object-fit: contain;
+
+}
+
+/* Apenas o selo do DETRAN recebe fundo branco */
+
+.logo-detran{
+
+    background: #fff;
+
+    padding: .5rem;
+
+    border-radius: 10px;
+
+}
+
+/* ==========================================================
+   REDES SOCIAIS
+========================================================== */
+
+.footer-social{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1.3rem;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 2rem;
+
+}
+
+.footer-social a{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.08);
+
+    transition: .3s ease;
+
+}
+
+.footer-social a:hover{
+
+    background: var(--cor-secundaria);
+
+    transform: translateY(-4px);
+
+}
+
+.footer-social i{
+
+    color: var(--cor-branca);
+
+    font-size: 1.35rem;
+
+}
+
+/* Logos (Mercado Livre, OLX e Shopee) */
+
+.footer-social img{
+
+    width: 50px;
+
+    height: 50px;
+
+    object-fit: contain;
+
+}
+
+/* ==========================================================
+   COPYRIGHT
+========================================================== */
+
+.footer-bottom{
+
+    border-top: 1px solid rgba(255,255,255,.15);
+
+    padding-top: 1rem;
+
+    text-align: center;
+
+}
+
+.footer-bottom p{
+
+    margin: .35rem 0;
+
+    font-size: .95rem;
+
+}
+
+.footer-bottom a{
+
+    color: var(--cor-secundaria);
+
+    text-decoration: none;
+
+    transition: .3s ease;
+
+}
+
+.footer-bottom a:hover{
+
+    text-decoration: underline;
+
+}
+
+/* ==========================================================
+   RESPONSIVO
+========================================================== */
+
+@media(max-width:768px){
+
+    .footer-marcas{
+
+        flex-direction: column;
+
+        gap: 1.5rem;
+
+    }
+
+    .footer-marcas img{
+
+        height: 60px;
+
+    }
+
+    .footer-social{
+
+        gap: 1rem;
+
+    }
+
+    .footer-social a{
+
+        width: 45px;
+
+        height: 45px;
+
+    }
+
+}

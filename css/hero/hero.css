@@ -1,0 +1,181 @@
+/* ==========================================================
+                        HERO
+========================================================== */
+
+/*
+    A Hero representa a primeira impressão da Landing Page.
+
+    Seu objetivo é destacar a especialidade da empresa,
+    transmitir confiança e incentivar o contato imediato.
+
+    Toda a estrutura foi construída seguindo
+    a metodologia Mobile First.
+*/
+
+
+/* ==========================================================
+                    HERO
+========================================================== */
+
+#hero{
+
+    position:relative;
+
+    overflow:hidden; 
+
+    padding: 0px;
+
+    
+}
+
+
+/* ==========================================================
+                IMAGEM DE FUNDO
+========================================================== */
+
+.hero-background{
+
+    position: relative;
+
+}
+
+.hero-background img{
+
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+
+    object-position: center 45%;
+
+}
+
+
+/* ==========================================================
+                        OVERLAY
+========================================================== */
+
+/*
+    Camada responsável por melhorar
+    a leitura do texto.
+
+    Não altera a imagem original.
+*/
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        rgba(0,0,0,.45),
+
+        rgba(0,0,0,.25)
+
+    );
+
+}
+
+
+/* ==========================================================
+                    HERO CONTENT
+========================================================== */
+
+.hero-content{
+
+    position:relative;
+
+    padding:50px 0;
+
+}
+
+
+/* ==========================================================
+                    CONTENT WRAPPER
+========================================================== */
+
+.hero-content .content-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* ==========================================================
+                        TEXTO
+========================================================== */
+
+.hero-content .texto{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+/* ==========================================================
+                        TÍTULO
+========================================================== */
+
+.hero-content h1{
+
+    color:var(--azul-secundario);
+
+    font-size:2.3rem;
+
+    font-weight:700;
+
+}
+
+
+/* ==========================================================
+                    SUBTÍTULO
+========================================================== */
+
+.hero-content p{
+
+    font-size:1.1rem;
+
+    max-width:650px;
+
+}
+
+
+/* ==========================================================
+                    BOTÃO
+========================================================== */
+
+.hero-content .btn-whatsapp{
+
+    align-self:flex-start;
+
+    margin-top:10px;
+
+}
+
+
+/* ==========================================================
+                ANIMAÇÕES FUTURAS
+========================================================== */
+
+/*
+    Espaço reservado para animações
+    quando iniciarmos o JavaScript.
+
+    Exemplo:
+
+    fade-in
+
+    slide-up
+
+    zoom
+
+*/

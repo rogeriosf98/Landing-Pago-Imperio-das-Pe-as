@@ -1,0 +1,253 @@
+/* ==========================================================
+   CONTATO
+========================================================== */
+
+#contato{
+
+    position: relative;
+
+    padding: 6rem 0;
+
+    overflow: hidden;
+
+}
+
+/* ==========================================================
+   IMAGEM DE FUNDO
+========================================================== */
+
+#contato .contato-background{
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+}
+
+#contato .contato-background img{
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+/* ==========================================================
+   OVERLAY
+========================================================== */
+
+#contato::before{
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.70);
+
+    z-index: 2;
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+#contato .container{
+
+    position: relative;
+
+    z-index: 3;
+
+}
+
+/* ==========================================================
+   CONTEÚDO
+========================================================== */
+
+#contato .contato-content{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4rem;
+
+}
+
+/* ==========================================================
+   CABEÇALHO
+========================================================== */
+
+#contato .section-header{
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+#contato .section-header h2{
+
+    margin-bottom: 1rem;
+
+    font-size: clamp(2rem,3vw,2.8rem);
+
+    color: var(--cor-branca);
+
+}
+
+#contato .section-header p{
+
+    line-height: 1.9;
+
+    color: rgba(255,255,255,.90);
+
+}
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+#contato .informacoes{
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 2rem;
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+#contato .informacoes article{
+
+    padding: 2.5rem;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,.10);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    transition: .35s ease;
+
+}
+
+#contato .informacoes article:hover{
+
+    transform: translateY(-8px);
+
+    background: rgba(255,255,255,.18);
+
+}
+
+/* ==========================================================
+   ÍCONES
+========================================================== */
+
+#contato .informacoes i{
+
+    font-size: 2.5rem;
+
+    color: var(--cor-secundaria);
+
+    margin-bottom: 1.2rem;
+
+}
+
+/* ==========================================================
+   TÍTULO DOS CARDS
+========================================================== */
+
+#contato .informacoes h3{
+
+    margin-bottom: .8rem;
+
+    color: var(--cor-branca);
+
+    font-size: 1.3rem;
+
+}
+
+/* ==========================================================
+   TEXTO DOS CARDS
+========================================================== */
+
+#contato .informacoes p{
+
+    color: rgba(255,255,255,.90);
+
+    line-height: 1.8;
+
+}
+
+/* ==========================================================
+   RESPONSIVO
+========================================================== */
+
+@media (max-width:768px){
+
+    #contato{
+
+        padding: 5rem 0;
+
+    }
+
+    #contato .informacoes{
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ==========================================================
+   LINK WHATSAPP
+========================================================== */
+
+#contato .whatsapp-card{
+
+    text-decoration: none;
+
+    color: inherit;
+
+    display: block;
+
+}
+
+#contato .whatsapp-card article{
+
+    height: 100%;
+
+}
+
+#contato .whatsapp-card:hover i{
+
+    transform: scale(1.15);
+
+}
+
+#contato .whatsapp-card i{
+
+    transition: .3s ease;
+
+}

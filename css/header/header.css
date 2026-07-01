@@ -1,0 +1,174 @@
+/* HEADER */
+
+header{
+
+    width:100%;
+
+    background:var(--branco);
+
+    box-shadow: var(--shadow-header);
+
+    position:sticky;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+}
+
+
+/* HEADER CONTENT */
+
+/*
+    Organiza a logo e o menu principal.
+
+    Mobile First:
+    os elementos permanecem alinhados
+    horizontalmente.
+*/
+
+.header-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    min-height:80px;
+
+}
+
+
+/* LOGO */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    height:60px;
+
+    width:auto;
+
+}
+
+
+/* NAVEGAÇÃO */
+
+nav{
+
+    display:none;
+
+}
+
+
+/* MENU */
+
+nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+/* ITENS DO MENU */
+
+nav li{
+
+    display:flex;
+
+}
+
+
+/* LINKS */
+
+nav a{
+
+    display:block;
+
+    padding:12px 18px;
+
+    font-family:var(--fonte-titulo);
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:var(--azul-secundario);
+
+    border-radius:var(--radius);
+
+    transition:var(--transition);
+
+}
+
+
+/* HOVER */
+
+nav a:hover{
+
+    background:var(--amarelo);
+
+    color:var(--azul-secundario);
+
+}
+
+
+/* ==========================================================
+                MENU MOBILE (FUTURO)
+========================================================== */
+
+/*
+    Este botão será utilizado futuramente
+    quando implementarmos o menu mobile
+    com JavaScript.
+*/
+
+.menu-toggle{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: transparent;
+
+    border: none;
+
+    color: var(--cor-branca);
+
+    font-size: 1.8rem;
+
+    cursor: pointer;
+
+
+}
+
+
+/* HEADER DURANTE O SCROLL */
+
+/*
+    Classe preparada para ser utilizada
+    futuramente pelo JavaScript.
+*/
+
+header.scrolled{
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+}

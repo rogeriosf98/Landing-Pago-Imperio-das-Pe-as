@@ -1,0 +1,167 @@
+/* ==========================================================
+   AVALIAÇÕES
+========================================================== */
+
+#avaliacoes{
+
+    padding: 5rem 0;
+
+    background: var(--cor-branca);
+
+}
+
+#avaliacoes .avaliacoes-content{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3.5rem;
+
+}
+
+/* ==========================================================
+   CABEÇALHO
+========================================================== */
+
+#avaliacoes .section-header{
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+#avaliacoes .section-header h2{
+
+    margin-bottom: 1rem;
+
+    font-size: clamp(2rem,3vw,2.8rem);
+
+    color: var(--cor-primaria);
+
+}
+
+#avaliacoes .section-header p{
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+
+    color: var(--cor-texto);
+
+}
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+#avaliacoes .avaliacoes-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 2rem;
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+#avaliacoes .card-avaliacao{
+
+    background: white;
+
+    padding: 2rem;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+    transition: .3s;
+
+}
+
+#avaliacoes .card-avaliacao:hover{
+
+    transform: translateY(-8px);
+
+}
+
+/* ==========================================================
+   FOTO
+========================================================== */
+
+#avaliacoes .card-avaliacao img{
+
+    width: 95px;
+
+    height: 95px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 1.2rem;
+
+    border: 4px solid var(--cor-secundaria);
+
+}
+
+/* ==========================================================
+   NOME
+========================================================== */
+
+#avaliacoes .card-avaliacao h3{
+
+    margin-bottom: .5rem;
+
+    color: var(--cor-primaria);
+
+}
+
+/* ==========================================================
+   ESTRELAS
+========================================================== */
+
+#avaliacoes .estrelas{
+
+    color: #FFD700;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 1rem;
+
+}
+
+/* ==========================================================
+   TEXTO
+========================================================== */
+
+#avaliacoes .card-avaliacao p{
+
+    line-height: 1.8;
+
+    color: var(--cor-texto);
+
+}
+
+/* ==========================================================
+   RESPONSIVO
+========================================================== */
+
+@media (max-width:992px){
+
+    #avaliacoes .avaliacoes-grid{
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
